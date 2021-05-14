@@ -5,13 +5,14 @@ namespace Octopy\Inotify\Watcher;
 use Closure;
 use Exception;
 use Illuminate\Support\Collection;
-use Octopy\Inotify\Event\InotifyCalledEvent;
+use Octopy\Inotify\Contract\Watcher;
+use Octopy\Inotify\Event\InotifyExecutedEvent;
 
 /**
  * Class InotifyWatcher
  * @package Octopy\Inotify\Watcher
  */
-class InotifyWatcher extends AbstractWatcher
+class InotifyWatcher extends AbstractWatcher implements Watcher
 {
     /**
      * @param  Closure $callback
@@ -35,13 +36,13 @@ class InotifyWatcher extends AbstractWatcher
                 if (! empty($events)) {
                     $events = $this->eventsMapping($events);
 
-                    if ($callback) {
-                        $callback(new InotifyCalledEvent($events));
-                    }
-
                     $events->each(function ($event) {
                         $this->execute($event);
                     });
+
+                    if ($callback) {
+                        $callback(new InotifyExecutedEvent($events), $this);
+                    }
                 }
             }
         }

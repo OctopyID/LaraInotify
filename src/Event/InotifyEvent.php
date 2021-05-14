@@ -3,12 +3,13 @@
 namespace Octopy\Inotify\Event;
 
 use Closure;
+use Octopy\Inotify\Contract\Event;
 
 /**
  * Class InotifyEvent
  * @package Octopy\Inotify\Event
  */
-class InotifyEvent
+class InotifyEvent implements Event
 {
     /**
      * @var int
@@ -43,7 +44,7 @@ class InotifyEvent
     /**
      * @param  int $mask
      */
-    public function mask(int $mask)
+    public function mask(int $mask) : void
     {
         $this->mask = $mask;
     }

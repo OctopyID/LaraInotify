@@ -12,8 +12,6 @@ use Octopy\Inotify\Inotify;
  */
 abstract class AbstractWatcher
 {
-    protected array $config = [];
-
     /**
      * @var bool
      */

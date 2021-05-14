@@ -12,11 +12,9 @@ functions to make it easier to watch filesystem and avoid memory leaks.
 ## Requirement
 
 - [PHP v8.x](https://www.php.net/downloads/)
+    - [ext-pcntl](https://www.php.net/manual/en/book.pcntl.php)
+    - [ext-inotify](https://www.php.net/manual/en/book.inotify.php)
 - [Laravel v8.x](https://laravel.com/)
-
-
-- [ext-pcntl](https://www.php.net/manual/en/book.pcntl.php)
-- [ext-inotify](https://www.php.net/manual/en/book.inotify.php)
 
 ## Installation
 
@@ -30,7 +28,9 @@ $ composer require octopyid/laravel-watcher
 $ artisan vendor:publish --provider="Octopy\Inotify\InotifyServiceProvider"
 ```
 
-## Basic Usage
+## Usage
+
+See [WIKI](https://github.com/OctopyID/LaraInotify/wiki) for details.
 
 ```php
 use Octopy\Inotify\Inotify;

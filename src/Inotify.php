@@ -73,6 +73,17 @@ class Inotify
     }
 
     /**
+     * @param  int $mask
+     * @return Inotify
+     */
+    public function mask(int $mask) : Inotify
+    {
+        $this->event->mask($mask);
+
+        return $this;
+    }
+
+    /**
      * @param  Closure $event
      * @return Inotify
      */

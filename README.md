@@ -23,7 +23,7 @@ To install the package, simply follow the steps below.
 Install the package using Composer:
 
 ```
-$ composer require octopyid/laravel-watcher
+$ composer require octopyid/laravel-inotify
 
 $ artisan vendor:publish --provider="Octopy\Inotify\InotifyServiceProvider"
 ```

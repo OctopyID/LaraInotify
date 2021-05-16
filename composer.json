@@ -12,8 +12,7 @@
     "require": {
         "php": "^8.0",
         "ext-pcntl": "*",
-        "ext-inotify": "*",
-        "laravel/framework": "^8.41"
+        "ext-inotify": "*"
     },
     "require-dev": {
         "orchestra/testbench": "^6.17"

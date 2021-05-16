@@ -30,28 +30,27 @@ $ artisan vendor:publish --provider="Octopy\Inotify\InotifyServiceProvider"
 
 ## Usage
 
-See [WIKI](https://github.com/OctopyID/LaraInotify/wiki) for details.
+See [WIKI](https://github.com/OctopyID/LaraInotify/wiki) for more details.
 
 ```php
 use Octopy\Inotify\Inotify;
-use Octopy\Inotify\Event\InotifyEvent;
-use Octopy\Inotify\Watcher\InotifyWatcher;
+use Octopy\Inotify\Contract\Event;
+use Octopy\Inotify\Contract\Watcher;
 
 $inotify = new Inotify('foo.txt');
 
-$inotify->event(function (InotifyEvent $event) {
+$inotify->event(function (Event $event) {
 
-    $event->on(IN_MODIFY, function (InotifyWatcher $watcher) {
+    $event->on(IN_MODIFY, function (Watcher $watcher) {
         // do something
     });
     
-    $event->on(IN_DELETE, function (InotifyWatcher $watcher) {
+    $event->on(IN_DELETE, function (Watcher $watcher) {
         // do something
     });
 
     // see : https://www.php.net/manual/en/inotify.constants.php for more events.
 });
-
 
 $inotify->watch();
 ```

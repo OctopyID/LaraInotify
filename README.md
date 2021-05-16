@@ -6,8 +6,8 @@
 
 # Lara Inotify
 
-Lara Inotify is a wrapper for [inotify](https://www.php.net/manual/en/book.inotify.php) for Laravel with added some
-functions to make it easier to watch filesystem and avoid memory leaks.
+Lara Inotify is a wrapper for [inotify](https://www.php.net/manual/en/book.inotify.php) for Laravel to make it easier to
+watch filesystem and avoid memory leaks.
 
 ## Requirement
 

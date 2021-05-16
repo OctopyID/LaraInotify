@@ -1,6 +1,6 @@
 {
     "name": "octopyid/laravel-inotify",
-    "description": "Laravel file & directory watcher",
+    "description": "Laravel filesystem watcher",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -8,6 +8,11 @@
             "name": "Supian M",
             "email": "supianidz@gmail.com"
         }
+    ],
+    "keywords": [
+        "laravel",
+        "filesystem",
+        "watcher"
     ],
     "require": {
         "php": "^8.0",

@@ -1,9 +1,3 @@
-<p align="center">
-    <img src="https://img.shields.io/packagist/v/octopyid/laravel-inotify.svg?style=for-the-badge" alt="Version">
-    <img src="https://img.shields.io/packagist/dt/octopyid/laravel-inotify.svg?style=for-the-badge&color=F28D1A" alt="Downloads">
-    <img src="https://img.shields.io/packagist/l/octopyid/laravel-inotify.svg?style=for-the-badge" alt="License">
-</p>
-
 # Lara Inotify
 
 Lara Inotify is a wrapper for [inotify](https://www.php.net/manual/en/book.inotify.php) for Laravel to make it easier to

@@ -47,7 +47,7 @@ class Inotify
      */
     public function __construct(string|null $source = null, Closure|null $event = null)
     {
-        if (! is_null($this->source)) {
+        if (! is_null($source)) {
             $this->source(new InotifySource($source));
         }
 

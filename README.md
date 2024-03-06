@@ -51,7 +51,7 @@ $inotify->watch();
 
 ## Security
 
-If you discover any security related issues, please email [supianidz@gmail.com](mailto:supianidz@gmail.com) instead of
+If you discover any security related issues, please email [bug@octopy.dev](mailto:bug@octopy.dev) instead of
 using the issue tracker.
 
 ## Credits
